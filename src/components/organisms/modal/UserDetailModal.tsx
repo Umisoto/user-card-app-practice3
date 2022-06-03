@@ -59,19 +59,19 @@ export const UserDetailModal: VFC<Props> = memo(props => {
             <Stack>
               <FormControl>
                 <FormLabel>Nick Name</FormLabel>
-                <Input value={nickName} isReadOnly={!isAdmin} onChange={onChangeNickName} />
+                <Input value={nickName} isReadOnly={!isAdmin} focusBorderColor="none" onChange={onChangeNickName} />
               </FormControl>
               <FormControl>
                 <FormLabel>Full Name</FormLabel>
-                <Input value={fullName} isReadOnly={!isAdmin} onChange={onChangeFullName} />
+                <Input value={fullName} isReadOnly={!isAdmin} focusBorderColor="none" onChange={onChangeFullName} />
               </FormControl>
               <FormControl>
                 <FormLabel>Mail</FormLabel>
-                <Input value={email} isReadOnly={!isAdmin} onChange={onChangeEmail} />
+                <Input value={email} isReadOnly={!isAdmin} focusBorderColor="none" onChange={onChangeEmail} />
               </FormControl>
               <FormControl>
                 <FormLabel>TEL</FormLabel>
-                <Input value={phone} isReadOnly={!isAdmin} onChange={onChangePhone} />
+                <Input value={phone} isReadOnly={!isAdmin} focusBorderColor="none" onChange={onChangePhone} />
               </FormControl>
               {
                   isAdmin &&
