@@ -15,7 +15,7 @@ JSONPlaceholderからユーザーデータを受け取り、カード形式で�
 
 ## URL
 
-
+[User_card_app.webm](https://user-images.githubusercontent.com/85279065/177036256-e2d433ce-c30e-481b-a46f-cf3fae865141.webm)
 
 ## アプリの使い方
 
