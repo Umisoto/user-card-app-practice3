@@ -4,7 +4,7 @@ import { useMessage } from "./useMessage";
 
 type Props = {
   userId: number;
-  users: Array<User>;
+  data: Array<User> | undefined;
   onOpen: () => void;
 };
 
@@ -13,9 +13,9 @@ export const useSelectUser = () => {
   const { message } = useMessage();
 
   const selectUser = useCallback((props: Props) => {
-    const { userId, users, onOpen } = props;
+    const { userId, data, onOpen } = props;
 
-    const targetUser = users.find(user => user.id === userId);
+    const targetUser = data?.find((user: any) => user.id === userId);
     if (targetUser) {
       setSelectedUser(targetUser);
       onOpen();
