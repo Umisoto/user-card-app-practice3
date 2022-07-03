@@ -53,6 +53,9 @@ export const Header: VFC = memo(() => {
           <Box pr={4}>
             <Link onClick={onClickSetting}>Setting</Link>
           </Box>
+          <Box pr={4}>
+            <Link onClick={onClickLogout}>Logout</Link>
+          </Box>
         </Flex>
         <MenuIconButton onClick={onOpen} />
       </Flex>

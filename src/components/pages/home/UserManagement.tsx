@@ -1,4 +1,4 @@
-import React, { VFC, memo, useEffect, useCallback } from "react";
+import React, { VFC, memo } from "react";
 import { UserCard } from "../../organisms/user/UserCard";
 import { useAllUsers } from "../../../hooks/useAllUsers";
 import { Wrap, WrapItem, Spinner, Flex, useDisclosure, Text } from "@chakra-ui/react";
@@ -8,18 +8,13 @@ import { useLoginUserContext } from "../../../hooks/useLoginUserContext";
 import { useQueryAllUsers } from "../../../hooks/useQueryAllUsers";
 
 export const UserManagement: VFC = memo(() => {
-  const { fetchUsers, users, loading } = useAllUsers();
+  const { loading } = useAllUsers();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { selectUser, selectedUser } = useSelectUser();
   const {loginUser}=useLoginUserContext()
   const {data, status}=useQueryAllUsers()
 
-  // useEffect(() => {
-  //   fetchUsers()
-  // }, [fetchUsers]);
-
   const onClickModalOpen = (userId: number) => {
-    // selectUser({ userId, users, onOpen });
     selectUser({ userId, data, onOpen });
   }
 
@@ -34,7 +29,6 @@ export const UserManagement: VFC = memo(() => {
         </Flex>
       ) : (
         <Wrap m={{ base: 6, md: 10 }} spacing={4} justify="center">
-          {/* {users.map(user => ( */}
           {data?.map((user: any) => (
             <WrapItem key={user.id}>
               <UserCard

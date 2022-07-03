@@ -4,13 +4,14 @@ import { Router } from "./router/Router";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./components/theme/theme";
 import {QueryClient, QueryClientProvider} from "react-query"
+// import {ReactQueryDevtools} from "react-query-devtools"
 
 function App() {
   const queryClient=new QueryClient({
     defaultOptions:{
       queries:{
         retry: false,
-        refetchOnWindowFocus: true
+        refetchOnWindowFocus: false
       }
     }
   })
@@ -21,6 +22,7 @@ function App() {
         <BrowserRouter>
           <Router />
         </BrowserRouter>
+        {/* <ReactQueryDevtools /> */}
       </QueryClientProvider>
     </ChakraProvider>
   );

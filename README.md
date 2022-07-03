@@ -1,47 +1,30 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+JSONPlaceholderからユーザーデータを受け取り、カード形式で表示するアプリです。  
+ログイン機能がついており、1-10のいずれかの数字を入力することでログインができます。「10」を入力するとユーザーの詳細情報を編集可能となっています（編集した情報は反映されません）。
 
-## Available Scripts
+## 使用技術等
+* react: 18.1.0 (create-react-app)
+* react-router-dom: 6.3.0
+* react-query: 3.39.1
+* typescript: 4.6.3
+* chakra-ui : 1.8.8
+* axios: 0.27.1
+* ユーザー情報: JSON Placeholder (https://jsonplaceholder.typicode.com/users)
+* ユーザーカード画像: Unsplash (https://source.unsplash.com/random/150x150)
 
-In the project directory, you can run:
+## URL
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## アプリの使い方
 
-### `npm test`
+1.ログイン画面では、1-10の適当な数字を入力することでログインが可能となります。  
+2.ログイン後、遷移したHome画面からUsers Listをクリックします(Settingはダミーページです)。  
+3.Users List画面では、JSON Placeholderから取得したユーザーがカード形式で表示されます。  
+4.適当なカードをクリックすると対象ユーザーの詳細モーダルが表示されます。  
+5.「10」でログインした時のみ、詳細モーダルの中身が編集可能となります(実際には編集結果は反映されません)。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# user-card-app-practice3
+## アプリ作成の意図
+React × TypeScriptで開発できるようになることを目的に作成しました。またグローバルなstate管理手法を学ぶため、まずはuseContextでアプリを作成し、その後一部をReact Queryに置き換えました。  
+そしてUIデザインはAtomic Designを導入しています。
