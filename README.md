@@ -1,4 +1,4 @@
-# User Management App
+# ユーザー管理アプリ
 
 JSONPlaceholderからユーザーデータを受け取り、カード形式で表示するアプリです。  
 ログイン機能がついており、1-10のいずれかの数字を入力することでログインができます。「10」を入力するとユーザーの詳細情報を編集可能となっています（編集した情報は反映されません）。
@@ -17,7 +17,7 @@ JSONPlaceholderからユーザーデータを受け取り、カード形式で�
 
 ## `URL`
 
-https://user-card-app-practice3.vercel.app/
+[User Management App](https://user-card-app-practice3.vercel.app/)
 
 ## `アプリの使い方`
 
