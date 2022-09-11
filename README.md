@@ -47,8 +47,8 @@ React × TypeScriptで開発できるようになることを目的に作成し�
 
 ## `ローカルでの動作方法`
 ```bash
-$ git clone https://github.com/Shota-mancity/movie-search.git
-$ cd movie-search
+$ git clone https://github.com/Shota-mancity/user-card-app-practice3.git
+$ cd user-card-app-practice3
 ```
 
 ```bash
