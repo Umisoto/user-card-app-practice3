@@ -34,12 +34,12 @@ React × TypeScriptで開発できるようになることを目的に作成し�
 * ユーザー情報: JSON Placeholder (https://jsonplaceholder.typicode.com/users)
 * ユーザーカード画像: Unsplash (https://source.unsplash.com/random/150x150)
 
-# `機能一覧`
+## `機能一覧`
 * ログイン・ログアウト機能(1-10のいずれかの数字でログイン可能)
 * 管理者権限(「10」でログインした場合のみ、Users listページの個人カードの情報を操作可能。ただし、編集結果は実際には反映されない)
 * レスポンシブデザイン
 
-# `今後の改善点`
+## `今後の改善点`
 * バックエンドでDB作成
 * ログインIDやユーザー情報のCRUD操作
 * マイページ
